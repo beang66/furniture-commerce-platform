@@ -1,15 +1,15 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Fraunces, Inter } from 'next/font/google'
+import { Archivo, Inter } from 'next/font/google'
 import './globals.css'
 
 const _inter = Inter({ subsets: ['latin'] })
-const _fraunces = Fraunces({ subsets: ['latin'] })
+const _archivo = Archivo({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'InteriorCommerce — 공간 큐레이션 가구 스토어',
+  title: 'InteriorCommerce — 모던 · 미드센추리 · 바우하우스 가구',
   description:
-    '미니멀 우드, 미드센추리 모던, 빈티지 가구를 공간별로 큐레이션합니다. 실측 규격과 3D 공간 배치 시뮬레이션으로 실패 없는 가구 쇼핑.',
+    '모던, 미드센추리 모던, 바우하우스 가구를 공간별로 큐레이션합니다. 실측 규격과 3D 공간 배치 시뮬레이션으로 실패 없는 가구 쇼핑.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#f7f6f2',
+  themeColor: '#f3f2ef',
 }
 
 export default function RootLayout({
