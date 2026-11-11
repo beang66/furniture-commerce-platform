@@ -36,6 +36,10 @@
 
 ## 화면
 
+| 상품 상세 | 장바구니 · 주문 정보 |
+| --- | --- |
+| <img src="docs/screenshots/detail.png" alt="상품 상세 화면: 규격, 옵션, 수량" width="430"> | <img src="docs/screenshots/cart.png" alt="장바구니와 주문 정보 화면" width="430"> |
+
 | 모바일 |
 | --- |
 | <img src="docs/screenshots/mobile.png" alt="모바일 메인 화면" width="240"> |
