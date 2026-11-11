@@ -1,33 +1,56 @@
-# furniture-commerce-platform
+<div align="center">
+  <h1 align="center">
+    가구 커머스 플랫폼
+  </h1>
+</div>
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white" alt="Next.js 16">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white" alt="React 19">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS 4">
+  <img src="https://img.shields.io/badge/shadcn/ui-components-000000" alt="shadcn/ui components">
+  <img src="https://img.shields.io/badge/Vercel-deployed-000000?logo=vercel&logoColor=white" alt="Vercel deployed">
+  <img src="https://img.shields.io/badge/built_with-v0-000000" alt="built with v0">
+</p>
 
-## Built with v0
+<p align="center"><a href="https://furniture-commerce-platform.vercel.app/">Live Demo</a></p>
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## Introduction
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_SgwB3UVRzbn39IQLtOS3KpT4GI6F)
+리빙 가구 7종을 둘러보고, 옵션을 골라 장바구니에 담는 흐름을 만든 가구 커머스 프로토타입입니다. v0로 화면을 만들고 Vercel로 배포했습니다.
 
-## Getting Started
+- **홈 · 상세 · 장바구니 세 화면**
 
-First, run the development server:
+> 한 페이지 안에서 홈, 상품 상세, 장바구니를 오가고, 화면이 바뀌면 맨 위로 돌아갑니다.
+
+- **옵션별 장바구니**
+
+> 같은 상품도 옵션이 다르면 따로 담고, 수량은 1–9개로 제한합니다.
+
+- **빠른 보기**
+
+> 목록에서 상세 화면으로 가지 않고 상품을 미리 봅니다.
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+pnpm install
+pnpm dev     # http://localhost:3000
+pnpm build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 구조
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+app/          layout · page (홈 / 상세 / 장바구니 화면 전환)
+components/   home-view · product-detail-view · cart-view · quick-view-dialog · site-header · ui
+lib/          products (상품 · 옵션 데이터) · cart
+```
 
-## Learn More
+## Status
 
-To learn more, take a look at the following resources:
+결제와 회원 기능이 없는 화면 프로토타입입니다. 상품 데이터는 예시입니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+## Author
+
+안정빈 — 기획 · v0 기반 구현 (개인)
