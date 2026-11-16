@@ -40,6 +40,7 @@ export function CartView({ items, onBack, onUpdateQuantity, onRemove, onClear }:
   const total = subtotal + delivery
   const formValid = form.name.trim() && form.address.trim() && form.phone.trim()
 
+  // 시연용 주문 완료 화면만 표시한다. 서버 주문 생성·결제 승인·배송 예약 요청은 수행하지 않는다.
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!formValid || detailed.length === 0) return
